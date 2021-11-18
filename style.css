@@ -1,0 +1,46 @@
+body {
+  padding: 2em 5em;
+  font: normal 40px/50px Arial, sans-serif;
+  color: black;
+}
+.main {
+	height: 500px;
+	width: 1000px;
+	background-color: orange;
+	position: relative;
+}
+.main p {
+  float: left;
+  height: 1.25em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+@keyframes it1 {
+0%  {top: 0em; }
+20% {top: -1.25em; }
+40% {top: -2.5em; }
+60% {top: -3.75em; }
+80% {top: -5em; }
+100% {top: -100px;}
+}
+.main b {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  vertical-align: bottom;
+}
+.main span {
+  display: inline-block;
+  color: purple;
+  position: relative;
+  white-space: nowrap;
+  animation: it1 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  text-decoration: underline;
+  text-decoration-color:red; 
+}
